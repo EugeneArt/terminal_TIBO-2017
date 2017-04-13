@@ -1,0 +1,377 @@
+@font-face {
+    font-family: Digit;
+    src: url(../fonts/digital-7.ttf);
+}
+
+html, body{
+    user-select: none;
+    height: 100%;
+
+    position: relative;
+    margin: 0 auto;
+    background: #337ab7;
+    font-size: 16px;
+    color: #191717;
+}
+header {
+    height: 74px;
+}
+.logo {
+    display: inline-block;
+    margin: 25px;
+}
+/*clock*/
+.wrapper_clock {
+    display: inline-block;
+    width: 30%;
+    height: 120px;
+    float: right;
+    background: #fff;
+    border-right: 1px solid #337ab7;
+    border-left: 1px solid #337ab7;
+    color: #337ab7;
+    font-style: italic;
+    text-align: center;
+}
+.clock {
+    margin-top: 25px;
+    font-size: 18px;
+}
+#Date {
+    /*display: inline-block;*/
+}
+.clock ul{
+    display: inline-block;
+    width: 165px;
+    padding: 0;
+    margin: 0 5px;
+
+    list-style: none;
+    font-size: 30px;
+    color: #337ab7;
+    text-align: center;
+    font-family: Digit;
+
+    color: #337ab7;
+}
+.clock li {
+    display: inline-block;
+    font-size: 45px;
+}
+.clock li:last-child {
+    width: 30px;
+}
+
+/*navigation*/
+
+.nav-tabs {
+    /*border: none;*/
+    font-size: 18px;
+    font-weight: 700;
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+    color: #fff;
+    background-color:  #337ab7;
+}
+.nav-tabs a {
+    color: #fff;
+}
+
+
+/*main-content*/
+main {
+    width: 100%;
+    height: calc(100% - 121px);
+}
+.tab-content {
+    width: 70%;
+    height: 100%;
+    overflow: auto;
+}
+.tab-content .container {
+    width: 95%;
+    margin-top: 10px;
+}
+.row {
+    margin-top: 12px;
+}
+.item {
+    position: relative;
+    height: 147px;
+    text-align: center;
+}
+.item img {
+    height: 100px;
+    border-radius: 50%;
+}
+.item_title {
+    display: block;
+    margin-top: 8px;
+    color: #fff;
+    font-style: italic;
+    font-weight: 700;
+}
+.item_price {
+    position: absolute;
+    top: 5px;
+    right: -5px;
+    padding: 5px 10px;
+    background: #fff;
+    line-height: 25px;
+    color: #337ab7;
+    border-radius: 100%;
+    z-index: 2;
+}
+.rigt-content {
+    position: absolute;
+    width: 30%;
+    top: 120px;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    border: 1px solid #337ab7;
+    overflow:hidden;
+    z-index: 10;
+}
+
+.terminal {
+    width: 100%;
+    height: calc(100% - 165px);
+    overflow: auto;
+}
+.list {
+    width: 100%;
+    padding: 10px 10px 0 35px;
+}
+.list li{
+    border-bottom: 1px dotted #337ab7;
+    font-style: italic;
+    padding-top: 2px;
+}
+.list span {
+    float: right;
+    font-weight: 700;
+}
+.glyphicon {
+    margin-right: 5px;
+    margin-left: 5px;
+    color: #337ab7;
+}
+
+.fullprice {
+    height: 40px;
+    padding: 5px 10px;
+    border-top: 1px solid #337ab7;
+    color: #337ab7;
+    font-size: 20px;
+    font-weight: 700;
+}
+.fullprice span {
+    display: none;
+    float: right;
+    color: #000;
+}
+
+
+.calc {
+    height: 100%;
+    border-top: 1px solid  #337ab7;
+}
+.calc-btn {
+    width: calc(50% - 15px);
+    float: left;
+
+    margin: 15px 0 15px 10px;
+    padding: 30px;
+    border: none;
+    background: #337ab7;
+    opacity: 0.5;
+    font-size: 22px;
+    font-weight: 700;
+    color: white;
+}
+
+/*popup*/
+.popup {
+    display: none;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background:#337ab7;
+    color: white;
+    font-size: 40px;
+
+    z-index: 100;
+}
+.popup h1 {
+    text-align: center;
+}
+.popup a {
+    display: inline-block;
+    margin: 25px 0;
+    padding: 10px;
+    border: 2px solid white;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+.wrapper-popup-list {
+    max-height: 71%;
+    overflow: auto;
+}
+.popup-list {
+    width: 500px;
+    margin: 20px auto;
+
+    font-size: 16px;
+    text-align: left;
+}
+.popup-list li {
+    border-bottom: 1px dotted #fff;
+}
+.popup-list span {
+    float: right;
+    font-style: italic;
+    font-weight: 700;
+}
+
+/*item-popup*/
+.item-popup_wrapper {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+.item-popup {
+    position: absolute;
+    margin-left: 20%;
+    margin-right: auto;
+    margin-top: -160px;
+    top: 50%;
+    left: 0;
+    right: 0;
+
+    width: 420px;
+    height: 320px;
+
+    background: #fff;
+
+    outline: 1px dotted #337ab7;
+    outline-offset: -4px;
+
+    z-index: 101;
+}
+
+.item-popup img {
+    margin: 12px 0 0 10px;
+    width: 200px;
+    height: 150px;
+    border-radius: 50%;
+}
+.item-popup_title {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    color: #191717;
+}
+.item-popup_price {
+    position: absolute;
+    top: 5%;
+    right: 40%;
+    padding: 5px 10px;
+    background: #fff;
+    border: 1px solid #337ab7;
+    line-height: 30px;
+    color:#337ab7;
+    border-radius: 100%;
+    z-index: 2;
+}
+.item-popup_nav {
+    margin-top: 30px;
+    text-align: center;
+}
+.item-popup_btn {
+    padding: 15px 40px;
+    margin: 10px;
+    background:  #337ab7;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+}
+#count {
+    width: 40px;
+    height: 35px;
+    border: none;
+    margin: 0;
+    text-align: center;
+
+    border: 1px solid #337ab7;
+
+}
+.item-popup_count {
+    display: inline-block;
+    vertical-align: bottom;
+}
+.item-popup_count input[type="button"] {
+    width: 35px;
+    height: 35px;
+    margin: 0 7px;
+    border: none;
+    background: #337ab7;
+    vertical-align: bottom;
+    color: #fff;
+
+}
+
+/*scrollbar*/
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(51,122,183,0.8);
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(51,122,183,0.8);
+}
+
+.printer {
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #337ab7;
+    text-align: center;
+    z-index: 1000;
+}
+.printer img {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    top: 50%;
+    margin-top: -200px;
+}
+
+.boobs {
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+.boobs img {
+    width: 100%;
+    height: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
